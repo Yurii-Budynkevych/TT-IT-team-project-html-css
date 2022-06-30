@@ -6,7 +6,7 @@
         padding-top: 40px;
         padding-bottom: 8px;
       }
-      @media screen and (min-width: 1200px) {
+      @media screen and (min-width: 1280px) {
         padding-top: 60px;
         }
     .container {
@@ -19,7 +19,7 @@
             justify-content: space-between;
           }
 
-          @media screen and (min-width: 1200px) {
+          @media screen and (min-width: 1280px) {
             padding: 0 16px;
             }
         
@@ -45,7 +45,7 @@
         display: flex; 
         justify-content: left;
       }
-      @media screen and (min-width: 1200px) {
+      @media screen and (min-width: 1280px) {
         font-size: 58px;
         line-height: 1.13;
         width: 477px;
@@ -68,7 +68,7 @@
         width: 340px;
         display: inline-block;
       }
-      @media screen and (min-width: 1200px) {
+      @media screen and (min-width: 1280px) {
         font-size: 30px;
         line-height: 1.13;
         letter-spacing: 0.04em;
@@ -81,7 +81,7 @@
     display: flex;
     justify-content: right;
     margin-bottom: 40px;
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
         margin-top: 12px;
         }
     &__link {
@@ -106,7 +106,7 @@
            margin-right: 30px;
            
           }
-          @media screen and (min-width: 1200px) {
+          @media screen and (min-width: 1280px) {
             margin-right: 24px;
             
            }
@@ -117,7 +117,7 @@
     display: flex;
     justify-content: end;
     margin-bottom: 40px;
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
         margin-bottom: 60px;
         }
 }
@@ -135,7 +135,7 @@
         font-size: 14px;
         line-height: 186%;
       }
-      @media screen and (min-width: 1200px) {
+      @media screen and (min-width: 1280px) {
         font-size: 16px;
         line-height: 186%;
         letter-spacing: 0.02em;
@@ -175,7 +175,7 @@
         padding-left: 18px;
         padding-right: 18px;
        }
-       @media screen and (min-width: 1200px) {
+       @media screen and (min-width: 1280px) {
        padding: 0 16px;
        }
 }
@@ -185,7 +185,7 @@
     flex-direction: column;
     width: 340px;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
        width: 472px;
         }
 } 
