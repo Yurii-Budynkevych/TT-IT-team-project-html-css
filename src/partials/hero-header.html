@@ -1,0 +1,73 @@
+<header class="page-header">
+  <div class="container container--header">
+    <a class="header-logo" href="#">
+      <img
+        class="logo-icon"
+        srcset="
+          ./images/hero-header/logo.png   1x,
+          ./images/hero-header/logox2.png 2x
+        "
+        src="./images/hero-header/logo.png"
+        alt="ice cream logo"
+        width="199"
+      />
+    </a>
+    <button
+      type="button"
+      class="menu-button"
+      aria-expanded="false"
+      aria-controls="menu"
+      data-menu-button
+    >
+      <svg width="14" height="14">
+        <use
+          class="burger-icon"
+          href="./images/hero-header/symbol-defs.svg#burger"
+        ></use>
+        <use
+          class="close-icon"
+          href="./images/hero-header/symbol-defs.svg#close"
+        ></use>
+      </svg>
+    </button>
+    <div class="menu" id="menu" data-menu>
+      <a href="#" class="buy-button">
+        Buy now<svg class="btn-svg" width="5" height="8">
+          <use href="./images/hero-header/symbol-defs.svg#vector"></use>
+        </svg>
+      </a>
+      <nav>
+        <ul>
+          <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
+          <li class="menu-item"><a href="#" class="menu-link">About us</a></li>
+          <li class="menu-item">
+            <a href="#" class="menu-link">How it's made?</a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link">Our products</a>
+          </li>
+          <li class="menu-item"><a href="#" class="menu-link">Contacts</a></li>
+        </ul>
+      </nav>
+    </div>
+    <a href="#" class="buy-button invisible">
+      Buy now<svg class="btn-svg" width="5" height="8">
+        <use href="./images/hero-header/symbol-defs.svg#vector"></use>
+      </svg>
+    </a>
+  </div>
+</header>
+<section class="hero">
+  <div class="container">
+    <h1 class="hero-title">
+      Ice cream <br />
+      made with <br /><span class="hero-accent">passion</span>
+    </h1>
+    <ul class="btn-list">
+      <li class="hero-item"><a class="hero-btn-a">Products</a></li>
+      <li class="hero-item">
+        <a class="hero-btn-b">How it's made?</a>
+      </li>
+    </ul>
+  </div>
+</section>
