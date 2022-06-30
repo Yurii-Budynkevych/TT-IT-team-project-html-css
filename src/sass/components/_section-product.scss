@@ -58,7 +58,7 @@
   flex-wrap: wrap;
   max-width: 280px;
   width: 100%;
-  height: 489px;
+  // height: 489px;
   background: #ffb8ca;
   border-radius: 24px;
   list-style: none;
@@ -66,11 +66,14 @@
   margin-top: 0;
   padding-left: 0;
   padding-right: 0;
+  padding-top: 160px;
+  padding-bottom: 40px;
   &:not(:last-child) {
     margin-bottom: 140px;
   }
   @media screen and (min-width: 768px) {
-    height: 611px;
+    // height: 611px;
+    padding-top: 118px;
     width: calc((100% - 2 * 16px) / 3);
     &:not(:last-child) {
       margin-right: 16px;
@@ -79,7 +82,9 @@
   }
   @media screen and (min-width: 1280px) {
     max-width: 395px;
-    height: 535px;
+    // height: 535px;
+    padding-bottom: 60px;
+    padding-top: 165px;
     width: calc((100% - 2 * 32px) / 3);
     &:not(:last-child) {
       margin-right: 32px;
@@ -92,11 +97,8 @@
   display: flex;
   align-items: center;
   margin: 0 auto;
-  margin-bottom: 32px;
   @media screen and (min-width: 1280px) {
-    padding-top: 165px;
     margin-bottom: 0;
-    padding-bottom: 70px;
   }
 }
 
@@ -114,14 +116,14 @@
   font-size: 20px;
   display: inline-flex;
   margin: 0 auto;
-  padding-top: 160px;
+  // padding-top: 160px;
   font-size: 20px;
   font-weight: 400;
   line-height: 22.9px;
   font-family: 'Titan One', sans-serif;
   text-transform: uppercase;
   @media screen and (min-width: 768px) {
-    padding: 118px 0 0 0;
+    padding: 0;
   }
   @media screen and (min-width: 1280px) {
     padding: 0;
@@ -138,8 +140,8 @@
     width: 280px;
     height: 280px;
     position: absolute;
-    top: -34%;
-    left: 0%;
+    top: -166px;
+    left: 0;
     @media screen and (min-width: 768px) {
       content: '';
       background-image: url('/src/images/section-product/product-picture1-tab1x.png');
@@ -164,8 +166,8 @@
   width: 280px;
   height: 280px;
   position: absolute;
-  top: -28%;
-  left: 0%;
+  top: -140px;
+  left: 0;
   @media screen and (min-width: 768px) {
     content: '';
     background-image: url('/src/images/section-product/product-picture2-tab1x.png');
@@ -189,7 +191,7 @@
   width: 280px;
   height: 280px;
   position: absolute;
-  top: -28%;
+  top: -140px;
   left: 0%;
   @media screen and (min-width: 768px) {
     content: '';
@@ -214,15 +216,15 @@
   background-color: #fff;
   border-radius: 50%;
   position: relative;
-  top: 210px;
-  left: -141px;
+  top: 55px;
+  left: -50%;
   @media screen and (min-width: 768px) {
-    top: 192px;
-    left: -114px;
+    top: 55px;
+    left: -50%;
   }
   @media screen and (min-width: 1280px) {
-    top: 229px;
-    left: -198px;
+    top: 66px;
+    left: -50%;
   }
 }
 
@@ -266,13 +268,17 @@
   text-align: center;
   color: #fff;
   font-size: 14px;
-  padding: 32px 40px 32px 40px;
+  padding: 70px 40px 32px 40px;
+  @media screen and (min-width: 768px) {
+    padding: 70px 32px 32px 32px;
+  }
+
   @media screen and (min-width: 1280px) {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.76;
     letter-spacing: 4%;
-    padding: 0 75px 60px 75px;
+    padding: 70px 75px 60px 75px;
   }
 }
 
@@ -285,7 +291,7 @@
   height: 40px;
   display: block;
   border-radius: 50%;
-  margin-bottom: 40px;
+  margin-bottom: 0;
 }
 
 .product__title {
