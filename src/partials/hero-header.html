@@ -1,4 +1,4 @@
-<header class="page-header">
+<!-- <header class="page-header">
   <div class="container container--header">
     <a class="header-logo" href="#">
       <img
@@ -56,18 +56,142 @@
       </svg>
     </a>
   </div>
-</header>
+</header> -->
 <section class="hero">
-  <div class="container">
-    <h1 class="hero-title">
-      Ice cream <br />
-      made with <br /><span class="hero-accent">passion</span>
-    </h1>
-    <ul class="btn-list">
-      <li class="hero-item"><a class="hero-btn-a">Products</a></li>
-      <li class="hero-item">
-        <a class="hero-btn-b">How it's made?</a>
-      </li>
-    </ul>
+  <div class="container hero__container">
+    <!-- title -->
+    <div class="hero-title__wrapper">
+      <h1 class="hero-title">
+        Ice cream <br />
+        made with <br /><span class="hero-accent">passion</span>
+      </h1>
+      <ul class="btn-list">
+        <li class="hero-item"><a class="hero-btn-a">Products</a></li>
+        <li class="hero-item">
+          <a class="hero-btn-b">How it's made?</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- milk -->
+    <picture>
+      <source
+        srcset="
+          images/hero-header/hero/milk-desk.png    1x,
+          images/hero-header/hero/milk-desk@2x.png 2x
+        "
+        media="(min-width: 1280px)"
+        width="213"
+      />
+
+      <source
+        srcset="
+          images/hero-header/hero/milk-tab.png    1x,
+          images/hero-header/hero/milk-tab@2x.png 2x
+        "
+        media="(min-width: 768px)"
+        width="152"
+      />
+
+      <img
+        class="img-milk"
+        src="images/hero-header/hero/milk-desk.png"
+        alt="симпатичная девушка лижет мороженное"
+      />
+    </picture>
+
+    <!-- content -->
+    <div class="hero-content__wrapper">
+      <p class="hero-content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et
+      </p>
+
+      <a href="" class="hero-content__link">
+        <svg width="5" height="5" class="hero-content-link__icon">
+          <use
+            href="./images/section-product/arrow-right.svg#icon-arrow-right2"
+          ></use>
+        </svg>
+      </a>
+    </div>
+
+    <!-- round -->
+    <div class="round"></div>
+
+    <!-- ice-cream -->
+    <picture>
+      <source
+        srcset="
+          images/hero-header/hero/icecream-desk.png    1x,
+          images/hero-header/hero/icecream-desk@2x.png 2x
+        "
+        media="(min-width: 1280px)"
+        width="236"
+      />
+
+      <source
+        srcset="
+          images/hero-header/hero/icecream-tab.png    1x,
+          images/hero-header/hero/icecream-tab@2x.png 2x
+        "
+        media="(min-width: 768px)"
+        width="143"
+      />
+
+      <source
+        srcset="
+          images/hero-header/hero/icecream-mob.png    1x,
+          images/hero-header/hero/icecream-mob@2x.png 2x
+        "
+        media="(max-width: 767.5px)"
+        width="171"
+      />
+
+      <img
+        class="img-icecream"
+        src="images/hero-header/hero/icecream-desk.png"
+        alt="мороженное в рожке"
+      />
+    </picture>
+
+    <!-- cafe -->
+    <div class="cafe">
+      <span class="cafe__number">16</span>
+      <span class="cafe__descr">cafes</span>
+    </div>
+
+    <!-- truck -->
+    <div class="truck">
+      <span class="truck__number">23</span>
+      <span class="truck__descr">food trucks</span>
+    </div>
+
+    <!-- girl -->
+    <picture>
+      <source
+        srcset="
+          images/hero-header/hero/girl-desk.png    1x,
+          images/hero-header/hero/girl-desk@2x.png 2x
+        "
+        media="(min-width: 1280px)"
+        width="304"
+      />
+
+      <source
+        srcset="
+          images/hero-header/hero/girl-tab.png    1x,
+          images/hero-header/hero/girl-tab@2x.png 2x
+        "
+        media="(min-width: 768px)"
+        width="190"
+      />
+
+      <img
+        class="img-girl"
+        src="images/hero-header/hero/girl-desk.png"
+        alt="симпатичная девушка лижет мороженное"
+      />
+    </picture>
   </div>
 </section>
