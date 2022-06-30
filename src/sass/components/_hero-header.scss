@@ -102,12 +102,81 @@
     color: #d41443;
   }
 }
+
+//
+//
+//
+//
+//
+//
+//
 // hero
-.hero {
-  padding-top: 136px;
-  padding-bottom: 158px;
+// .hero {
+//   padding-top: 136px;
+//   padding-bottom: 158px;
+//   background-color: $hero-bg-color;
+
+//   position: relative;
+//   overflow: hidden;
+//   outline: 3px solid blue;
+
+//   @media screen and (min-width: 768px) {
+//   }
+
+//   @media screen and (min-width: 1280px) {
+//   }
+// }
+
+.hero__container {
+  height: 502px;
+  // padding-top: 136px;
+  // padding-bottom: 158px;
   background-color: $hero-bg-color;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  // outline: 3px solid blue;
+  z-index: 2;
+  position: relative;
+
+  width: 100%;
+  @media screen and (max-width: 767.5px) {
+    max-width: 320px;
+    height: 502px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    height: 416px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    height: 664px;
+  }
 }
+
+// title
+
+.hero-title__wrapper {
+  max-width: 220px;
+  position: absolute;
+  top: 194;
+  left: 20;
+  z-index: 4;
+
+  @media screen and (min-width: 768px) {
+    top: 102px;
+    left: 32px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 280px;
+    top: 147px;
+    left: 16px;
+  }
+}
+
 .hero-title {
   margin-bottom: 20px;
 
@@ -120,26 +189,60 @@
   text-transform: uppercase;
 
   color: #ffffff;
+
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 38px;
+    margin-bottom: 24px;
+  }
 }
+
 .hero-accent {
   color: #d41443;
-  font-size: 44px;
+  font-size: 48px;
   line-height: 1.15;
+
+  @media screen and (min-width: 768px) {
+    font-size: 34px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+  }
 }
 .btn-list {
   display: flex;
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1280px) {
+  }
 }
+
 .hero-item:not(:last-child) {
   margin-right: 8px;
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1280px) {
+  }
 }
+
 .hero-btn-a {
-  padding: 10px 14px;
+  padding: 7px 14px;
 
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 8px;
-  line-height: 10px;
+  line-height: 1.25;
+  letter-spacing: 0em;
+
   align-items: center;
   text-align: center;
 
@@ -147,15 +250,29 @@
   border-radius: 22px;
   background-color: #d41443;
   color: #ffffff;
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 11px 25px;
+
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: 0em;
+    text-align: center;
+  }
 }
+
 .hero-btn-b {
-  padding: 10px 14px;
+  padding: 7px 14px;
 
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 8px;
-  line-height: 10px;
+  line-height: 1.25;
+  letter-spacing: 0em;
+
   align-items: center;
   text-align: center;
 
@@ -167,5 +284,335 @@
   &:hover,
   &:focus {
     background-color: #ecebeb;
+  }
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 11px 20px;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+}
+
+// milk
+
+.img-milk {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+
+    position: absolute;
+    top: 246px;
+    left: 32px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    top: 388px;
+    left: 16px;
+  }
+}
+
+// content
+.hero-content__wrapper {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    max-width: 114px;
+
+    position: absolute;
+    top: 287px;
+    left: 184px;
+
+    z-index: 4;
+
+    .hero-content {
+      font-size: 8px;
+      font-weight: 400;
+      line-height: 1.5;
+      letter-spacing: 0em;
+      text-align: left;
+
+      color: #ffffff;
+
+      margin-bottom: 7px;
+    }
+
+    .hero-content__link {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      transition-property: background-color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+        background-color: $accent-text-color;
+      }
+    }
+
+    .hero-content-link__icon {
+      display: block;
+      fill: $accent-text-color;
+
+      transition-property: fill;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+      .hero-content__link:hover &,
+      .hero-content__link:focus & {
+        fill: #ffffff;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 200px;
+    top: 456px;
+    left: 229px;
+
+    .hero-content {
+      font-size: 14px;
+    }
+  }
+}
+
+// round
+.round {
+  width: 346px;
+  height: 344px;
+  border-radius: 172px;
+  background-color: #ffa5ba;
+
+  position: absolute;
+  top: 83px;
+  left: 36px;
+
+  @media screen and (min-width: 768px) {
+    width: 334px;
+    height: 334px;
+    border-radius: 50%;
+
+    top: 43px;
+    left: 248px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 534px;
+    height: 534px;
+    border-radius: 50%;
+
+    top: 54px;
+    left: 517px;
+  }
+}
+
+// ice-cream
+
+.img-icecream {
+  display: block;
+
+  position: absolute;
+  top: 92px;
+  left: 117px;
+  z-index: 1;
+
+  @media screen and (min-width: 768px) {
+    top: 80px;
+    left: 322px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    top: 108px;
+    left: 636px;
+  }
+}
+
+// cafe
+
+.cafe {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: inline-flex;
+    width: 43px;
+    height: 44px;
+    flex-direction: column;
+    align-items: end;
+
+    position: absolute;
+    top: 94px;
+    right: 40px;
+
+    z-index: 2;
+    // outline: 1px dashed teal;
+
+    &::after {
+      content: '';
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: #fff;
+
+      position: absolute;
+      top: -2px;
+      right: -10px;
+
+      z-index: -1;
+    }
+
+    .cafe__number {
+      font-family: 'Titan One';
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 1.14;
+      letter-spacing: 0.04em;
+      text-align: right;
+      color: $accent-text-color;
+    }
+
+    .cafe__descr {
+      font-size: 8px;
+      font-weight: 400;
+      line-height: 1.25;
+      letter-spacing: 0em;
+      text-align: right;
+
+      color: #ffffff;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 72px;
+    height: 77px;
+    top: 153px;
+    right: 34px;
+
+    &::after {
+      content: '';
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+
+      position: absolute;
+      top: -4px;
+      right: -18px;
+    }
+
+    .cafe__number {
+      font-size: 46px;
+    }
+
+    .cafe__descr {
+      font-size: 14px;
+      line-height: 1.29;
+    }
+  }
+}
+
+// truck
+.truck {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: inline-flex;
+    width: 51px;
+    height: 43px;
+    flex-direction: column;
+    align-items: end;
+
+    position: absolute;
+    top: 153px;
+    right: 40px;
+
+    z-index: 2;
+    // outline: 1px dashed teal;
+
+    &::after {
+      content: '';
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: #fff;
+
+      position: absolute;
+      top: -2px;
+      right: -10px;
+
+      z-index: -1;
+    }
+
+    .truck__number {
+      font-family: 'Titan One';
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 1.14;
+      letter-spacing: 0.04em;
+      text-align: right;
+      color: $accent-text-color;
+    }
+
+    .truck__descr {
+      font-size: 8px;
+      font-weight: 400;
+      line-height: 1.25;
+      letter-spacing: 0em;
+      text-align: right;
+
+      color: #ffffff;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 92px;
+    height: 76px;
+
+    top: 245px;
+    right: 34px;
+
+    &::after {
+      content: '';
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+
+      position: absolute;
+      top: -4px;
+      right: -18px;
+    }
+
+    .truck__number {
+      font-size: 46px;
+    }
+
+    .truck__descr {
+      font-size: 14px;
+      line-height: 1.29;
+    }
+  }
+}
+
+// girl
+.img-girl {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    top: 265px;
+    left: 546px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    top: 424px;
+    left: 960px;
   }
 }
