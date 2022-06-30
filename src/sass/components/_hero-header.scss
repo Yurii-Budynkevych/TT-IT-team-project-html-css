@@ -50,11 +50,12 @@
 }
 .buy-button {
   display: inline-flex;
+  align-items: center;
 
   padding-left: 48px;
   padding-right: 48px;
-  padding-top: 18px;
-  padding-bottom: 18px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   margin-bottom: 32px;
 
   border: transparent;
