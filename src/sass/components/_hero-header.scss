@@ -1,14 +1,18 @@
 .page-header {
   background-color: $hero-bg-color;
   position: relative;
-  // @media screen and (min-width: 1280px) {
-  //   position: static;
-  // }
+  @media screen and (min-width: 1280px) {
+    position: static;
+  }
 }
 .container--header {
   display: flex;
   @media screen and (min-width: 768px) {
     padding-top: 32px;
+  }
+  @media screen and (min-width: 1280px) {
+    justify-content: space-between;
+    align-items: center;
   }
 }
 .logo-icon {
@@ -24,6 +28,9 @@
 
   @media screen and (min-width: 768px) {
     margin-right: 32px;
+  }
+  @media screen and (min-width: 1280px) {
+    display: none;
   }
 }
 .close-icon {
@@ -53,14 +60,14 @@
   &.is-open {
     transform: translateX(0%);
   }
-  // @media screen and (min-width: 1280px) {
-  //   position: static;
-  //   transform: translateX(0%);
-  //   height: unset;
-  //   width: unset;
-  //   padding: 0;
-  //   background-color: transparent;
-  // }
+  @media screen and (min-width: 1280px) {
+    position: static;
+    transform: translateX(0%);
+    height: unset;
+    width: unset;
+    padding: 0;
+    background-color: transparent;
+  }
 }
 .buy-button {
   display: inline-flex;
@@ -88,6 +95,9 @@
   &:hover,
   &:focus {
     background-color: #ecebeb;
+  }
+  @media screen and (min-width: 1280px) {
+    display: none;
   }
 }
 .buy-button-invisible {
@@ -125,8 +135,17 @@
 .btn-svg {
   margin-left: 20px;
 }
+.menu-list {
+  @media screen and (min-width: 1280px) {
+    display: flex;
+  }
+}
 .menu-item:not(:last-child) {
   margin-bottom: 22px;
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 0;
+    margin-right: 35px;
+  }
 }
 .menu-link {
   font-family: 'DM Sans';
