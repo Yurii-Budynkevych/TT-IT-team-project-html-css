@@ -168,6 +168,10 @@
   &:focus {
     color: #d41443;
   }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 21px;
+  }
 }
 
 //
