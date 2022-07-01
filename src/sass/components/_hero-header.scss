@@ -105,6 +105,7 @@
 
   color: #d41443;
   background-color: #ffffff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
@@ -137,6 +138,7 @@
 
   color: #d41443;
   background-color: #ffffff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
@@ -170,6 +172,7 @@
   align-items: center;
 
   color: #ffffff;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
@@ -357,6 +360,16 @@
   border-radius: 22px;
   background-color: #d41443;
   color: #ffffff;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: #c7133e;
+  }
+
   @media screen and (min-width: 768px) {
   }
 
@@ -452,6 +465,7 @@
     }
 
     .hero-content__link {
+      margin-left: -4px;
       width: 18px;
       height: 18px;
       border-radius: 50%;
@@ -478,10 +492,10 @@
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-      // @media screen and (max-width: 1280px) {
-      //   width: 8px;
-      //   height: 8px;
-      // }
+      @media screen and (min-width: 1280px) {
+        width: 8px;
+        height: 8px;
+      }
     }
   }
 
@@ -529,8 +543,8 @@
     height: 534px;
     border-radius: 50%;
 
-    bottom: 77px;
-    left: 517px;
+    bottom: 82px;
+    left: 508px;
   }
 }
 

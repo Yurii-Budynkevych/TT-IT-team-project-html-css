@@ -1,0 +1,490 @@
+/* body {
+  margin: 0;
+  padding: 0;
+
+}
+
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+} */
+
+/* .list {
+  list-style: none;
+} */
+/*
+section {
+  background-color: #FFF5F6;
+  ;
+} */
+
+.section_background {
+  background-color: $add-bg-color;
+}
+
+.advantages__section {
+  background-color: $add-bg-color;
+}
+
+.hidden {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.section_button:hover,
+.section_button:focus {
+  background: #ecebeb;
+}
+
+@media screen and (min-width: 320px) {
+  .photo-mob {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .photo-tab {
+    display: none;
+  }
+
+  .photo {
+    display: none;
+  }
+
+  .about__container {
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .heading {
+    margin-bottom: 32px;
+  }
+
+  .main__h {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 39px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: #d41443;
+  }
+
+  .secondary__h {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+
+    /* identical to box height */
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #ffa5ba;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+
+  .section_text-main {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 162%;
+
+    /* or 19px */
+
+    color: #000000;
+
+    margin-bottom: 20px;
+  }
+
+  .section_text-secondary {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 162%;
+
+    /* or 19px */
+
+    color: #907e82;
+    margin-bottom: 20px;
+  }
+
+  .advantages_h {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 41px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: #d41443;
+  }
+
+  .advantages_p {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 170%;
+
+    /* or 20px */
+
+    color: #000000;
+    margin-bottom: 32px;
+  }
+
+  .list-item {
+    margin-right: 142px;
+  }
+
+  .list-icon {
+    margin-bottom: 16px;
+  }
+
+  .section_text {
+    margin-bottom: 20px;
+  }
+
+  .section_button {
+    width: 176px;
+    height: 44px;
+    background: #ffffff;
+    border-radius: 22px;
+    border: 0;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    /* display: flex; */
+    align-items: center;
+    text-align: center;
+
+    color: #d41443;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .photo-tab {
+    display: block;
+    margin-right: 15px;
+    width: 335px;
+    height: 335px;
+  }
+
+  .photo-mob {
+    display: none;
+  }
+
+  .photo {
+    display: none;
+  }
+
+  .section_block {
+    display: flex;
+  }
+
+  .section_list {
+    display: flex;
+  }
+
+  .advantages__container {
+    padding-top: 20px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 80px;
+  }
+
+  .heading {
+    margin-bottom: 40px;
+  }
+
+  .main__h {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 66px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #d41443;
+  }
+
+  .secondary__h {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 34px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #ffa5ba;
+    margin-bottom: 16px;
+    margin-top: 0;
+  }
+
+  .section_text-main {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 176%;
+
+    /* or 28px */
+    letter-spacing: 0.04em;
+
+    color: #000000;
+
+    margin-bottom: 32px;
+  }
+
+  .section_text-secondary {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 194%;
+
+    /* or 27px */
+    letter-spacing: 0.04em;
+
+    color: #907e82;
+  }
+
+  .advantages_h {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 55px;
+    letter-spacing: 0.04em;
+
+    color: #d41443;
+    margin-bottom: 13px;
+  }
+
+  .advantages_p {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 174%;
+
+    /* or 24px */
+
+    color: #000000;
+  }
+
+  .list-item:not(:last-child) {
+    margin-right: 142px;
+  }
+
+  .list-icon {
+    margin-bottom: 36px;
+  }
+
+  .section_text {
+    margin-bottom: 40px;
+  }
+
+  .section_button {
+    width: 176px;
+    height: 44px;
+    background: #ffffff;
+    border-radius: 22px;
+    border: 0;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    /* display: flex; */
+    align-items: center;
+    text-align: center;
+
+    color: #d41443;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .photo {
+    display: block;
+    margin-right: 139px;
+  }
+
+  .photo-tab {
+    display: none;
+  }
+
+  .photo-mob {
+    display: none;
+  }
+
+  .section_list {
+    display: flex;
+  }
+
+  .section_block {
+    display: flex;
+  }
+
+  .section_p {
+    padding-top: 72px;
+    padding-bottom: 99px;
+    margin-right: 161px;
+  }
+
+  .advantages__container {
+    padding-top: 60px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .heading {
+    margin-bottom: 79px;
+  }
+
+  .section_background {
+    background-image: url(../images/how-its-made/section-cowbg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+
+  .main__h {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 66px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #d41443;
+  }
+
+  .secondary__h {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 34px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #ffa5ba;
+    margin-bottom: 16px;
+    margin-top: 0;
+  }
+
+  .section_text-main {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 176%;
+
+    /* or 28px */
+    letter-spacing: 0.04em;
+
+    color: #000000;
+
+    margin-bottom: 32px;
+  }
+
+  .section_text-secondary {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 194%;
+
+    /* or 27px */
+    letter-spacing: 0.04em;
+
+    color: #907e82;
+  }
+
+  .advantages_h {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 66px;
+    /* text-align: right; */
+    letter-spacing: 0.04em;
+
+    color: #d41443;
+
+    margin-bottom: 16px;
+  }
+
+  .advantages_p {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 176%;
+
+    /* or 28px */
+    letter-spacing: 0.02em;
+
+    color: #000000;
+  }
+
+  .list-item:not(:last-child) {
+    margin-right: 142px;
+  }
+
+  .list-icon {
+    margin-bottom: 40px;
+  }
+
+  .section_text {
+    margin-bottom: 40px;
+  }
+
+  .section_button {
+    width: 176px;
+    height: 44px;
+    background: #ffffff;
+    border-radius: 22px;
+    border: 0;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    /* display: flex; */
+    align-items: center;
+    text-align: center;
+
+    color: #d41443;
+  }
+}
