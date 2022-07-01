@@ -1,25 +1,48 @@
-<section class="section_background" id="about">
-  <div class="about__container container">
+<section class="section_background">
+  <div class="about__container">
     <div class="heading">
       <p class="secondary__h">tradition and love</p>
       <h2 class="main__h">how it’s made?</h2>
     </div>
     <div class="section_block">
-      <img
-        class="photo-mob"
-        src="./images/how-its-made/cow-phone.png"
-        alt="корова и свежее молоко"
-      />
-      <img
-        class="photo-tab"
-        src="./images/how-its-made/cow-tablet.png"
-        alt="корова и свежее молоко"
-      />
-      <img
-        class="photo"
-        src="./images/how-its-made/cow.png"
-        alt="корова и свежее молоко"
-      />
+      <picture>
+        <source
+          srcset="
+            ./images/how-its-made/cow.png    1x,
+            ./images/how-its-made/cow_2x.png 2x
+          "
+          media="(min-width: 1280px)"
+          width="1280"
+        />
+
+        <!-- <img class="photo" src="./images/cow.png" alt="разные виды мороженного"> -->
+
+        <source
+          srcset="
+            ./images/how-its-made/cow-tablet.png    1x,
+            ./images/how-its-made/cow-tablet_2x.png 2x
+          "
+          media="(min-width: 768px)"
+          width="768"
+        />
+
+        <!-- <img class="photo" src="./images/cow-tablet.png" alt="разные виды мороженного"> -->
+
+        <source
+          srcset="
+            ./images/how-its-made/cow-phone.png    1x,
+            ./images/how-its-made/cow-phone_2x.png 2x
+          "
+          media="(max-width: 767.5px)"
+          width="320"
+        />
+
+        <img
+          class="photo"
+          src="./images/how-its-made/cow-phone.png"
+          alt="разные виды мороженного"
+        />
+      </picture>
 
       <div class="section_p">
         <ul class="section_text list">
@@ -52,7 +75,7 @@
 
 <section class="advantages__section">
   <h2 class="hidden">Advantages</h2>
-  <div class="advantages__container container">
+  <div class="advantages__container">
     <ul class="section_list list">
       <li class="list-item">
         <img class="list-icon" src="./images/how-its-made/icon1.png" alt="" />
@@ -71,7 +94,7 @@
       <li class="list-item">
         <img class="list-icon" src="./images/how-its-made/icon3.png" alt="" />
         <h3 class="advantages_h">84</h3>
-        <p class="advantages_p">
+        <p class="advantages_p last">
           Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
         </p>
       </li>
