@@ -40,6 +40,7 @@
 
   .advantages__section {
     padding-top: 40px;
+    padding-bottom: 80px;
   }
 
   .heading {
@@ -165,7 +166,7 @@
 
 @media screen and (min-width: 768px) {
   .photo {
-    margin-right: 15px;
+    margin-right: 32px;
   }
 
   .section_block {
@@ -230,7 +231,7 @@
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 176%;
 
     /* or 28px */
@@ -279,7 +280,7 @@
   }
 
   .list-item:not(:last-child) {
-    margin-right: 142px;
+    margin-right: 4px;
   }
 
   .list-icon {
@@ -349,7 +350,7 @@
   } */
 
   .heading {
-    margin-bottom: 79px;
+    margin-bottom: 60px;
   }
 
   .section_background {
