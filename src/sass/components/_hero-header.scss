@@ -116,8 +116,7 @@
   }
 }
 .buy-button-invisible {
-  display: inline-flex;
-  align-items: center;
+  display: none;
 
   height: 45px;
   padding-left: 48px;
@@ -144,8 +143,9 @@
   &:focus {
     background-color: #ecebeb;
   }
-  @media screen and (max-width: 767px) {
-    display: none;
+  @media screen and (min-width: 768px) {
+    display: inline-flex;
+    align-items: center;
   }
 }
 .btn-svg {
@@ -156,8 +156,16 @@
     display: flex;
   }
 }
+.menu-item {
+  padding: 11px;
+  border-top: 1px solid #e18298;
+  border-bottom: 1px solid #e18298;
+  @media screen and (min-width: 1280px) {
+    padding: 0px;
+    border: unset;
+  }
+}
 .menu-item:not(:last-child) {
-  margin-bottom: 22px;
   @media screen and (min-width: 1280px) {
     margin-bottom: 0;
     margin-right: 35px;
