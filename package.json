@@ -1,5 +1,5 @@
 {
-  "name": "parcel-project-template",
+  "name": "tt-it-team-project-html-css",
   "version": "2.0.0",
   "description": "",
   "homepage": "https://YevgenMalashenko.github.io/TT-IT-team-project-html-css",
@@ -9,10 +9,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
+    "url": "https://github.com/Yurii-Budynkevych/TT-IT-team-project-html-css.git"
   },
   "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "tt-it-team",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/goitacademy/parcel-project-template/issues"
