@@ -2,7 +2,7 @@
   "name": "tt-it-team-project-html-css",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://YevgenMalashenko.github.io/TT-IT-team-project-html-css",
+  "homepage": "https://yurii-budynkevych.github.io/TT-IT-team-project-html-css/",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /TT-IT-team-project-html-css/"
